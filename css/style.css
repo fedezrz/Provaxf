@@ -1,0 +1,19 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+@media (min-width: 768px)
+bootstrap.css:1300
+.lead {
+    font-size: 19px;
+}
+.lead {
+    margin-bottom: 27px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2.4;
+}
