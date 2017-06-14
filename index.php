@@ -1,55 +1,93 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Prova sito web </title>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-
- <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Decript</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+ <?php 
+  include('header.php');
+ ?>
+ <a name="Decript">
+    <a name="Home"></a>
     <div class="container">
-
+    
+    <img class="img-circle" src="css/persona-digitando.jpg">
+      <h1 class="namesito">Criptazione & Decriptazione</h1>
+      
+    </div>
+         
+    <a name="about"></a>
       <div class="starter-template">
-        <h1>Criptazione e Decriptazione</h1>
-        <p class="lead">In informatica e nelle telecomunicazioni si definisce Criptazione,<br>  l'operazione con cui si traduce un'informazione in codice</p>
-         <p class="lead">In informatica e nelle telecomunicazioni si definisce Decriptazione,<br>  l'operazione con cui si cerca di intepretare un testo cifrato</p>
-        <aside>
-          <h1>Prova visiva</h1>
-        </aside>
+      
+       <h1 class="primotitolo">Significato cripta e decripta</h1><br>
+        <p class="lead">In informatica e nelle telecomunicazioni si definisce Criptazione,<br>  
+        l'operazione con cui si traduce un'informazione in codice
+        </p>
+         <p class="lead">In informatica e nelle telecomunicazioni si definisce Decriptazione,<br>  
+         l'operazione con cui si cerca di intepretare un testo cifrato
+         </p>
+      </div>
+    
+
+      <div>
+        <h1 class="spiegazioneAlgoritmi">Tipi di algoritmi che si possono utilizzare:</h1>
+
       </div>
 
-    </div><!-- /.container -->
+       <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+       1°Algoritmo Reverse</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">L'algoritmo Reverse consiste nell'inserimento di una parola o di una frase da parte di un utente 
+       e con l'inserimento di questa frase/parola ,cliccando il bottone per criptare ,la parola/frase verrà capovolta </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        2°Algoritmo Cesàr</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">In crittografia, un cifrario di Cesare, noto anche come spostamento crittografia , si tratta di un tipo di sostituzione cifrario in cui una lettera nel testo originale è sostituita da un'altra lettera che è un numero fisso di posizioni nel corso della dell'alfabeto 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        3°Algoritmo Vigenère</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body"> L'algoritmo di Vigenère coinsiste invece di spostare sempre dello stesso numero di posti la lettera da cifrare, questa viene spostata di un numero di posti variabile ma ripetuto, determinato in base ad una parola chiave, da concordarsi tra mittente e destinatario, e da scrivere ripetutamente sotto il messaggio, carattere per carattere</div>
+    </div>
+  </div>
+ <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        4°Algoritmo Personale</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">In crittografia, un cifrario di Cesare, noto anche come spostamento crittografia , si tratta di un tipo di sostituzione cifrario in cui una lettera nel testo originale è sostituita da un'altra lettera che è un numero fisso di posizioni nel corso della dell'alfabeto 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container -->
+  <div class="container-fluid bg-2 text-center" >
+    <h3>
+    Vuoi iniziare a Criptare?
+    </h3>
+    <a href="crypt.php" class="btn btn-default btn-lg">
+    <i class="fa fa-play" aria-hidden="true"></i>Start</a>
+  </div>
 
-	
-	</body>
-</html>
+<?php
+  include("footer.php");
+?>

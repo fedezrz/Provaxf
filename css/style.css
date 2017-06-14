@@ -1,19 +1,99 @@
-body {
+
+body {						
   padding-top: 50px;
+  background-color: white;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+div.container{				/*primo container azzuro */
+    width: 100%;
+    height: 100%;
+    padding: 185px 15px;
+ 	background-color: rgba(0,255,215,1);
+ 	text-align: center; 
+}
+.starter-template {		
+  	text-align: center;
+	height: 100%;
+    padding: 250px 15px;
+}
+img.imgtestata{				/*prima immagine*/
+	width: 330px;
 }
 
-@media (min-width: 768px)
-bootstrap.css:1300
-.lead {
-    font-size: 19px;
+h1.namesito{					/*Primo titolo*/
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: white;
+	font-size: 4.75em;
+	text-transform: uppercase;
+	font-weight: 700px;
 }
-.lead {
-    margin-bottom: 27px;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 2.4;
+
+h1.primotitolo{
+	font-family:monospace;
+	color: black;
+	font-size: 3.50em;
+	text-transform: uppercase;
+
+}
+
+.navbar-right {
+     margin-right: 0px;
+}
+
+div.tabella-scrittura{
+	width: 100%;
+    height: 100%;
+    padding: 121px 15px;
+ 	background-color: rgba(0,255,215,1);
+ 	text-align: center; 
+
+}
+p.inserisciFrase{
+	font-family:monospace;
+	color: black;
+	text-align:center; 
+	font-size: 3.00em;
+	text-transform: uppercase;
+}
+
+
+div.input-group{
+
+	align-content: center;
+	align-content: center;
+    position: relative;
+    top: 20px;
+    left: 425px;
+}
+div.input-group .form-control{   
+	
+    width: 25%;
+    height: 45px;
+    font-size: 19px;
+    border: 1px, solid;
+    border-radius: 14px;
+}
+
+div.scelta{
+
+	position: relative;
+	top: 20px;
+	left:425px;
+}
+
+h1.spiegazioneAlgoritmi{
+	font-family:monospace;
+	color: black;
+	text-align:center; 
+	font-size: 3.00em;
+	text-transform: uppercase;
+
+}
+
+div.container-subscribe{
+	font-family:monospace;
+	color: black;
+	text-align:center; 
+	font-size: 4.75em;
+	text-transform: uppercase;
+
 }
