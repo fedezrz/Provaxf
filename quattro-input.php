@@ -5,7 +5,23 @@
 		Cellulare: <input type="number" name="name"><br>
 		Numero conto bancario: <input type="number" name="email"><br>
 		La tua matricola è: <input type="number" name="matricola"><br>
-		Il tuo numero di scarpe è: <input type="number" name="scarpa">
+		Il tuo numero di scarpe è: <input type="number" name="scarpa"><br>
+		I tuoi anni sono: <input type="number" name="anno"><br>
+		Il tuo voto è: <input type="number" name="voto">
+		<input type="submit">
+	</form>
+	<form action="ricerca.php" method="post">
+		Scrivi un numero: <input type="number" name="numRicerca">
+		<br><br><hr>
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
+		<input type="number" name="arrRicerca[]">
 		<input type="submit">
 	</form>
 <?php 
