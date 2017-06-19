@@ -24,6 +24,26 @@
 		<input type="number" name="arrRicerca[]">
 		<input type="submit">
 	</form>
+
+	<form action="moltiplicazione-successione.php" method="post">
+		Scrivi un numero: <input type="number" name="numMolt">
+		<input type="submit">
+	</form>
+	<form action="matrice.php" method="post">
+		<input type="submit">
+	</form>
+
+<hr>
+	<form action="writeFile.php" method="post">
+		<input type="text" name="nome">
+		<input type="text" name="cognome">		
+		<input type="number" name="dataNasc">
+		<input type="number" name="altezza">
+		
+		<input type="submit">
+	</form>
+
+
 <?php 
 	include("footer.php");
 ?>
