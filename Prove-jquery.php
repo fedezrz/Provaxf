@@ -16,7 +16,7 @@ $(document).ready(function(){
         }
         else{
         	//se la casella di input è vuota porta la stringa "prova" all'interno dell'array
-        	array.push("prova");
+        	array.push("inserisci prova");
         }
 
         if ($("#idNome").val()!="") {
@@ -24,7 +24,7 @@ $(document).ready(function(){
 			vero++;
         }
         else{
-        	array.push("nome");
+        	array.push("inserisci nome");
         }
 
 		if ($("#idCognome").val()!="") {
@@ -32,7 +32,7 @@ $(document).ready(function(){
 			vero++;
         }
        else{
-        	array.push("cognome");
+        	array.push("inserisci cognome");
         }
 
 		if ($("#idData").val()!="") {
@@ -40,7 +40,7 @@ $(document).ready(function(){
 			vero++;
         }
        else{
-        	array.push("data");
+        	array.push("inserisci data");
         }
         
         //se la variabile "vero" è uguale a 4, manda un alert che avvisa che tutte le 4 caselle sono state riempite
@@ -58,8 +58,17 @@ $(document).ready(function(){
  					 		
        		 }
        		 alert(stampa);
+
    		}
 
+
+   		$("#btn1").click(function(){
+
+		$("#idProva").hide(2000)
+		$("#idNome").hide(2000)
+		$("#idCognome").hide(2000)
+		$("#idData").hide(2000)
+   		})
    		 
    		
     });
@@ -76,6 +85,20 @@ $(document).ready(function(){
 		
 		<button type="button" id="btn1">Show Text</button>
 	</form>
+<form>
+<div class="svg-progress-demo1" data-progress-value="93">
+  <span class="svg-progress-output"></span>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jQuery-svg-progress.js"></script>
+<script>
+    $('.svg-progress-demo1').svgprogress({
+        figure: "hexagon",
+        progressFillGradient: ['#fcbf02','#2cbc99'],
+        progressWidth: 4
+    }); 
 
+</script>
+</form>
 </body>
 </html>
