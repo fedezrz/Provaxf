@@ -26,10 +26,26 @@ fwrite($myfile, $email);
 fwrite($myfile, $giorno);
 
 
-$handle = @fread("text/newfile.txt", "r");
+	$arrayN= array();
+
+$filename = "text/newfile.txt";
+$handle = fopen($filename, "r");
+while (($line = fgets($handle,filesize($filename))) !== false){
+	$arrLine=explode(",", $line);
+	die(var_dump($line));
+	foreach ($arrLine as $value) {
+		
+	
+		echo $value['Nome'];
+	}
+}
+
+fclose($handle);
+
+/*$handle = @fread("text/newfile.txt", "r");
 fread($handle, 100);
 fclose($handle);
-/*if ($handle) 
+if ($handle) 
 {
 while (($line = fgets($handle)) !== false) {				//un ciclo per ogni volta che si inserisce un profilo 
         $arrLine=explode(":",$line);
@@ -37,11 +53,12 @@ while (($line = fgets($handle)) !== false) {				//un ciclo per ogni volta che si
    
         if ($car=="n") {										//riconoscere il nome attraverso il primo carattere della stringa
         	echo "nome:".$arrLine[1]."<br>";					
-        	$array1['nome']=$arrLine[1];						//
+        	$array1['nome']=$arrLine[1];						
         }
 
 	}
 }
+
 
 
 fclose($handle);*/
