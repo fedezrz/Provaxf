@@ -97,3 +97,9 @@ div.container-subscribe{
 	text-transform: uppercase;
 
 }
+
+table{
+  table-layout: fixed;
+  width: 400px;
+  border:1px;
+}
