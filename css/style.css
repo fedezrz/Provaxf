@@ -98,8 +98,8 @@ div.container-subscribe{
 
 }
 
-table{
-  table-layout: fixed;
-  width: 400px;
-  border:1px;
+table{  
+  border: 1px solid black; 
+  border-spacing: 0px; 
+  padding:300px 5px;
 }
