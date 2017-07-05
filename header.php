@@ -34,7 +34,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="Form-registrazione.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="quattro-input.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="file-login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

@@ -11,16 +11,21 @@
 $filename = "text/newfile.txt";
 $handle = fopen($filename, "r");
 
-echo "<table>";
+echo "<table>";						//creazione della tabella dove sono contenuti i dati utente
 	echo "<tr>";
+
+	//intestazione della tabella
 	echo "<td>"."Nome"."|"."</td>"."<td>"."Cognome"." |"."</td>"."<td>"."Email"."|"."</td>"."<td>"."giorno"."|"."</td>"."<td>"."mese"."|"."</td>"."<td>"."anno"."|"."</td>";
 	echo "</tr>";
 while (($line = fgets($handle,filesize($filename))) !== false){
+
+	//senza l'explode sarebbe una stringa unica, ogni volta che incontra una virgola divide la stringa
 	$arrLine=explode(",", $line);
 	
 	echo "<tr>";
 	foreach ($arrLine as $value) {			
-	
+
+		//stampa dell'array
 		echo "<td>".$value."</td>";
 	}
 	echo "</tr>";
@@ -35,30 +40,16 @@ $lenFile=filesize("text/newfile.txt");
 $txt=file_get_contents ("text/newfile.txt",true);
 
 
-/*// hostname
-$nomehost = "localhost";   
-// utente per la connessione a MySQL  
-$nomeuser = "root";
-// password per l'autenticazione dell'utente 
-$password = "";
-// connessione tramite mysql_connect()
-$connessione = mysql_connect($nomehost,$nomeuser,$password);
-$selezione = mysql_select_db("dbFederz",$connessione) or die (mysql_error());
-$sqlTxt="SELECT * FROM users";
-
- $sql = mysql_query($sqlTxt) or die (mysql_error());
- $res=mysql_fetch_row($sql);
-var_dump($res);
- foreach ($res as $key => $value) {
- 	echo $value; 
- }
- mysql_close();*/
-
-
 
 ?><br>
 
 <?php
+session_start();
+if (isset($_SESSION["logon"]) && $_SESSION["logon"]) {
+	# code...
+
+
+//elementi appertenenti il database
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -66,10 +57,12 @@ $dbname = "dbFederz";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
+
 
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
@@ -83,6 +76,7 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
+}
 ?>
 
 
